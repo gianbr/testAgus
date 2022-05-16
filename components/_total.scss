@@ -1,0 +1,330 @@
+body {
+    font-family: 'Fredoka One', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Color de fondo */
+
+.fondo {
+    background-color: #e6d8b8;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+
+/* Inicio de Página */
+
+.header {
+    background-color: #DFA7F3;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 60px;
+    align-items: center;
+}
+
+
+/* Color de las letras de la página web */
+
+.color__letras {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 25px;
+    font-size: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    height: 0px;
+    align-items: center;
+}
+
+
+/* Logo de la pagina Principal */
+
+.logo__img {
+    height: 90px;
+    margin-right: 20px;
+    margin-top: px;
+    border-radius: 20px;
+}
+
+
+/* Foto del logo abajo del header */
+
+.foto__logo {
+    display: block;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+
+/* Foto de Disfruta del Sabor */
+
+.foto__disfruta {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    border: 5px solid;
+}
+
+
+/* Texto de productos destacados para ti */
+
+.texto {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* Fotos de portada de la pagina INDEX */
+
+.huevos {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 30px;
+    padding: 50px;
+}
+
+.tarjeta__imagen {
+    transition: 0.5s;
+}
+
+.tarjeta__imagen:hover {
+    width: 500px;
+    height: 500px;
+}
+
+
+/* Bordes de las imagenes de .huevos */
+
+.tarjeta__imagen {
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+
+/* El Footer */
+
+.final {
+    background-color: #787878;
+    width: 100%;
+    height: 190px;
+    text-align: center;
+}
+
+
+/* Logos de Whattsapp/Facebook/Instagram */
+
+.loguito {
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+
+/* Número de telefono */
+
+.numero {
+    margin-top: 20px;
+}
+
+
+/* Sub titulo */
+
+.sub__titulo {
+    text-align: center;
+    margin-top: 70px
+}
+
+
+/* Cuadraro de la pagina Contacto */
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 90px;
+    background-color: #DFA7F3;
+    border: 3px solid black;
+    border-radius: 60px;
+    margin: 200px;
+}
+
+
+/* Cuadraro de la pagina Contacto */
+
+.hero__left {
+    width: 50%;
+}
+
+.hero__right {
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Cuadraro de la pagina Contacto */
+
+.imagen__contacto {
+    width: 700px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+
+/* PAGINA INDEX  CON GRID*/
+
+.seccion {
+    width: 100%;
+}
+
+.seccion__titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    border: 2px;
+    padding: 1rem;
+    min-height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    /* Columnas */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px 400px;
+    /* Filas */
+    grid-template-areas: "ele1 ele1" "ele2 ele3" "ele4 ele5";
+    gap: 2rem
+}
+
+
+/* IMAGENES DE LA PAGINA PRINCIPAL CON GRID */
+
+.grid__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid__hijo--1 {
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 5px;
+}
+
+.grid__hijo--2 {
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+.grid__hijo--3 {
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+.grid__hijo--4 {
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+.grid__hijo--5 {
+    margin-top: 40px;
+    border: 5px solid #000000;
+    border-radius: 10px;
+}
+
+
+/* Media Querys (TABLET) */
+
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .logo__img {
+        flex-direction: column;
+    }
+    .color__letras {
+        flex-direction: column;
+    }
+    .nav {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .huevos {
+        flex-direction: column;
+    }
+    .imagen__contacto {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* Viste menores de 600px  (CELULAR)*/
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .logo__img {
+        flex-direction: column;
+    }
+    .color__letras {
+        flex-direction: column;
+    }
+    .nav {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .huevos {
+        flex-direction: column;
+    }
+    .foto__disfruta {
+        width: 50%;
+    }
+    .tarjeta__imagen {
+        width: 200px;
+        height: 200px;
+    }
+    .grid {
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+    .imagen__contacto {
+        width: 100px;
+        height: 100px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+}
+
+/* APLICANDO SASS */
